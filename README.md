@@ -1,8 +1,10 @@
-## WordStream - Interactive Tool for Topic Visualization
+# WordStream
 
-Demo: https://WordStreamVis.github.io/demo.html
+Demo:  https://WordStreamVis.github.io
 
-Video: https://WordStreamVis.github.io
+Video:  https://WordStreamVis.github.io/video.html
+
+[![WS](https://github.com/nnhuyen/WordStream/blob/master/images/Huffington.png)](https://www.youtube.com/watch?v=DwaDMPhi2Ec "Everything Is AWESOME")
 
 *WordStream* is a visualization technique for demonstrating the evolution of a topic over time. This is a hybrid 
 technique from Wordle and StreamGraph, which conveys textual data with both global and local perpsectives. Global trends
@@ -18,11 +20,12 @@ left to right, in the bottom of the interface. The categories for textual data a
 - Red for *others*
 
 The importance of a word is represented by its font size and opacity. In this study, the importance of a word is its 
-sudden attention: a word which appear repeatedly throughout the timeline conveys less and less meaning than in its first 
+[Sudden 
+attention](https://www.cs.uic.edu/~tdang/TimeArcs/EuroVis2016/TimeArcs_Dang_EuroVis2016.pdf): a word which appear repeatedly throughout the timeline conveys less and less meaning than in its first 
 appearance. A word's sudden attention is a function of frequency, which is big when the previous timestep has small 
 frequency and this current timestep has high frequency. 
 
-![ScreenShot](https://i.imgur.com/1yUtKA7.jpg)
+![ScreenShot](https://github.com/nnhuyen/WordStream/blob/master/media/highlight.png)
 
 WordStream shows the remarkable topics by emphasizing them with font size and opacity.  
 
@@ -39,7 +42,10 @@ underlying relationships of terms. Here, we consider the relationship base on co
  
  The tool allows users to customize:
   - *Width*, *height*, *font size* and *number of chosen words (top rank)*. 
-  - *Flow* and *Angle Variance* are preferences for text orientation.
-  - *Relationsgip* (for Huffington Post dataset), showing the relationship between words from multiple categories.
+  - *Flow* 
+ and *Angle Variance* are preferences for text orientation.
+ - Relationships: Toggle allows relationship to be displayed.
  
- The metrics includes measurements for the importance of the word displayed. In the process of placing word, some of them are left out due to lack of space. For example, TF-IDF ratio means the rate between the words shown to all the word. 
+ The metrics includes measurements for the importance of the word displayed. In the process of placing word, some of 
+ them are left out due to lack of space. For example, TF-IDF ratio means the rate between the words shown to all the 
+ word. 
